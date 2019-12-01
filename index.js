@@ -30,10 +30,12 @@ app.get("/", (req, res) => {
     res.send("<html><body><h1>My server...</h1></body></html>")
 });
 
+
 /*app.get(BASE_API_PATH + "/contacts", (req, res) => {
     console.log(Date() + " - GET /contacts");
     res.send(contacts);
 });*/
+
 
 app.get(BASE_API_PATH + "/contacts", (req, res) => {
     console.log(Date() + " - GET /contacts");
