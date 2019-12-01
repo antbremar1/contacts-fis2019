@@ -42,7 +42,10 @@ app.get(BASE_API_PATH + "/contacts", (req, res) => {
             console.log(Date() + " - " + err);
             res.sendStatus(500);
         } else {
-            res.send(contacts);
+            res.send(contacts.map((contacts) => {
+                delete contact._id;
+                return contact;
+            }));
         }
     });
 });
@@ -64,4 +67,4 @@ app.post(BASE_API_PATH + "/contacts", (req, res) => {
 
 app.listen(port);
 
-console.log("Server ready!");
+console.log("Server ready!!!");
