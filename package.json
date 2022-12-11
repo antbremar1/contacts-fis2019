@@ -15,7 +15,7 @@
   "author": "Antonio Brenes",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "nedb": "^1.8.0"
   }
 }
